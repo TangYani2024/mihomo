@@ -55,6 +55,7 @@ const (
 	ZeroTier
 	EasyTier
 	GostRelay
+	Mirage
 )
 
 const (
@@ -242,6 +243,8 @@ func (at AdapterType) String() string {
 		return "EasyTier"
 	case GostRelay:
 		return "GostRelay"
+	case Mirage:
+		return "Mirage"
 	case Relay:
 		return "Relay"
 	case Selector:
